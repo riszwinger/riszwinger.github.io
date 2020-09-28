@@ -16,6 +16,7 @@
   {% endif %}
 
   <div class="author__content">
+     <h3 class="author__name"><a href="/">{{ author.name }}</a></h3>
     {% if author.home %}
       <a href="{{ author.home | relative_url }}"><h3 class="author__name" itemprop="name">{{ author.name }}</h3></a>
     {% else %}
