@@ -1,3 +1,18 @@
+# Notes 
+
+1. For home page ,post look can be changed by updating  _inlcudes/archive_single.html
+2. For changes in specific post , change layouts/single.html
+
+
+
+
+
+
+
+
+
+
+
 # [Minimal Mistakes Jekyll theme](https://mmistakes.github.io/minimal-mistakes/)
 
 [![LICENSE](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/mmistakes/minimal-mistakes/master/LICENSE)
