@@ -30,9 +30,7 @@
       <i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%B %d, %Y" }} &nbsp;|&nbsp;
       {% endif %}
 
-      {% if post.read_time %}
-      <i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}
-      {% endif %}
+     
     </p>
     
     {% include page__meta.html type=include.type %}
