@@ -20,7 +20,7 @@ title                    : "Rishabh Gupta"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Rishabh Gupta"
-description              : "Rishabh Gupta."
+description              : "Data Science Blog"
 url                      : https://riszwinger.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "riszwinger/riszwinger.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -95,13 +95,10 @@ analytics:
 author:
   name             : "Rishabh Gupta"
   avatar           : https://avatars0.githubusercontent.com/u/18100860?s=460&u=2eebc215d7f106da1cdeec4a0ad755e80defdcb7&v=4 # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Senior Data Scientist at Jetstar Airways | Machine Learning | Deep Learning"
+  bio              : "Senior Data Scientist at Jetstar Airways"
   location         : "Melbourne , Australia"
   email            : "rishwinger@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:rishwinger@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
