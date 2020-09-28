@@ -25,16 +25,17 @@
       {% endif %}
     </h2>
     
-    {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-    {% endif %}
-        {% if page.date %}
-              {{ page.date | date: "%B %d, %Y" }}
-            {% endif %}
+    <p class="page__meta">
+      {% if post.date %}
+      <i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ post.date | date: "%B %d, %Y" }} &nbsp;|&nbsp;
+      {% endif %}
+
+      {% if post.read_time %}
+      <i class="far fa-clock" aria-hidden="true"></i> {% include read-time.html %}
+      {% endif %}
+    </p>
     
     {% include page__meta.html type=include.type %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> ...Read more</a></strong></p></p>{% endif %}
+     {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify | strip_html | truncate: 160 }}</p>{% endif %}
   </article>
 </div>
