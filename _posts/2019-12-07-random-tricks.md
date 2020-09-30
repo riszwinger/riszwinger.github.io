@@ -11,7 +11,7 @@ tags:
 <b>Note:</b> Below tricks are a reminder to myslefy how I solved the problem at the time . . .
 </div>
 
-<img src="/images/2019-12-07-random-tricks_files/python-img.jpg">
+<img src="/images/python-img.jpg">
 
 
 <h1 id="tocheading">Table of Contents</h1>
@@ -23,6 +23,10 @@ tags:
 4. [Boxplots](#Boxplots)
 5. [Numerical Data EDA](#numerical_eda)
 6. [Generate Sample DataFrame](#Sample_data)
+7. [args & kwargs](#FunctionArguments)
+8. [Zip unzip](#zip)
+
+
 
 
 ### Find words with forward slash  <a class="anchor" id="Find_words_with_forward_slash"></a>
@@ -330,7 +334,7 @@ plt.show()
 ```
 
 
-![png](/images/2019-12-07-random-tricks_files/2019-12-07-random-tricks_22_0.png)
+![png](2019-12-07-random-tricks_files/2019-12-07-random-tricks_22_0.png)
 
 
 
@@ -517,7 +521,7 @@ plt.show()
 ```
 
 
-![png](/images/2019-12-07-random-tricks_files/2019-12-07-random-tricks_26_0.png)
+![png](2019-12-07-random-tricks_files/2019-12-07-random-tricks_26_0.png)
 
 
 ### Boxplots <a class="anchor" id="Boxplots"></a>
@@ -534,7 +538,7 @@ plt.show()
 ```
 
 
-![png](/images/2019-12-07-random-tricks_files/2019-12-07-random-tricks_28_0.png)
+![png](2019-12-07-random-tricks_files/2019-12-07-random-tricks_28_0.png)
 
 
 
@@ -619,7 +623,7 @@ plt.show()
 ```
 
 
-![png](/images/2019-12-07-random-tricks_files/2019-12-07-random-tricks_30_0.png)
+![png](2019-12-07-random-tricks_files/2019-12-07-random-tricks_30_0.png)
 
 
 
@@ -664,7 +668,7 @@ plt.show()
 ```
 
 
-![png](/images/2019-12-07-random-tricks_files/2019-12-07-random-tricks_33_0.png)
+![png](2019-12-07-random-tricks_files/2019-12-07-random-tricks_33_0.png)
 
 
 ### Generate Sample DataFrame <a class="anchor" id="Sample_data"></a>
@@ -930,10 +934,89 @@ pd.util.testing.makeDataFrame()
 
 
 
+### args & kwargs <a class="anchor" id="FunctionArguments"></a>
+
+
+[kaggle Source](https://www.kaggle.com/kanncaa1/data-sciencetutorial-for-beginners)
+
 
 ```python
-
+def f1(*args):
+    """ *args can be one or more"""
+    for val in args:
+        print(val)
 ```
+
+
+```python
+f1(1,2,3,4)
+```
+
+    1
+    2
+    3
+    4
+    
+
+
+```python
+def f2(**kwargs):
+    """ **kwargs is a dictionary"""
+    for key,val in kwargs.items():
+        print(key,val) 
+```
+
+
+```python
+f2(country='india',capital='delhi',covid_cases=10)
+```
+
+    country india
+    capital delhi
+    covid_cases 10
+    
+
+### Zip unzip <a class="anchor" id="zip"></a>
+
+
+[kaggle Source](https://www.kaggle.com/kanncaa1/data-sciencetutorial-for-beginners)
+
+
+```python
+l1=[1,2,3]
+l2=[10,12,13]
+list(zip(l1,l2))
+```
+
+
+
+
+    [(1, 10), (2, 12), (3, 13)]
+
+
+
+
+```python
+for i,j in zip(l1,l2):
+    print(i,j)
+```
+
+    1 10
+    2 12
+    3 13
+    
+
+**Unzip**
+
+
+```python
+z1=zip(l1,l2)
+s1,s2=list(zip(*z1))
+print(s1,s2)
+```
+
+    (1, 2, 3) (10, 12, 13)
+    
 
 
 ```python
