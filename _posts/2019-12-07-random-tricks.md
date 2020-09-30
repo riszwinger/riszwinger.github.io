@@ -11,7 +11,7 @@ tags:
 <b>Note:</b> Below tricks are a reminder to myslefy how I solved the problem at the time . . .
 </div>
 
-<img src="/images/python-img.jpg">
+<img src="/images/2019-12-07-random-tricks_files/python-img.jpg">
 
 
 <h1 id="tocheading">Table of Contents</h1>
@@ -334,7 +334,7 @@ plt.show()
 ```
 
 
-![png](2019-12-07-random-tricks_files/2019-12-07-random-tricks_22_0.png)
+![png](/images/2019-12-07-random-tricks_files/2019-12-07-random-tricks_22_0.png)
 
 
 
@@ -521,7 +521,7 @@ plt.show()
 ```
 
 
-![png](2019-12-07-random-tricks_files/2019-12-07-random-tricks_26_0.png)
+![png](/images/2019-12-07-random-tricks_files/2019-12-07-random-tricks_26_0.png)
 
 
 ### Boxplots <a class="anchor" id="Boxplots"></a>
@@ -538,7 +538,7 @@ plt.show()
 ```
 
 
-![png](2019-12-07-random-tricks_files/2019-12-07-random-tricks_28_0.png)
+![png](/images/2019-12-07-random-tricks_files/2019-12-07-random-tricks_28_0.png)
 
 
 
@@ -623,7 +623,7 @@ plt.show()
 ```
 
 
-![png](2019-12-07-random-tricks_files/2019-12-07-random-tricks_30_0.png)
+![png](/images/2019-12-07-random-tricks_files/2019-12-07-random-tricks_30_0.png)
 
 
 
@@ -668,7 +668,7 @@ plt.show()
 ```
 
 
-![png](2019-12-07-random-tricks_files/2019-12-07-random-tricks_33_0.png)
+![png](/images/2019-12-07-random-tricks_files/2019-12-07-random-tricks_33_0.png)
 
 
 ### Generate Sample DataFrame <a class="anchor" id="Sample_data"></a>
