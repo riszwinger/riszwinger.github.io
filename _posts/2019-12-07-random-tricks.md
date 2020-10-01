@@ -5,6 +5,8 @@ permalink: /posts/2019/12/random-tricks/
 excerpt: Random tricks are a reminder to myself how I solved the problem at the time
 tags:
   - Python
+header:
+  teaser: "/images/2019-12-07-random-tricks_files/python-img.jpg"
 ---
 
 <div class="alert alert-block alert-info">
