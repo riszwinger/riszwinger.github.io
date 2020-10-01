@@ -8,6 +8,8 @@ tags:
   - Computer Vision
   - Pytesseract
   - Python
+header:
+  teaser: "/images/2020-01-17-OCR-Pytesseract_files/header.png"
 ---
 
 
