@@ -2,22 +2,24 @@
 title: 'Clustering Analysis'
 date: 2020-09-09
 permalink: /posts/2020/09/clustering-analysis/
-excerpt: Clustering is an unsupervised learning problem , its aim is to identify or discover interesting patterns from the data.This aim of this tutorial is to apply K-means algorithm on numerical data , K-prototype algorithm on mixed data (numerical + categorical data) and analyze the properties of resulting clusters to gain insights.
+excerpt: Clustering is an unsupervised learning problem , its aim is to identify or discover interesting patterns from the data.This aim of this tutorial is to apply K-means algorithm on numerical data , K-Prototypes algorithm on mixed data (numerical + categorical data) and analyze the properties of resulting clusters to gain insights.
 tags:
   - Clustering
-  - K-Prototype
+  - K-Prototypes
   - K-means
   - Python
+header:
+  teaser: "/images/2020-09-09-clustering-analysis_files/header.jpg"
 ---
 
 ## Introduction
 
 Clustering is an unsupervised learning problem , its aim is to identify or discover interesting patterns from the data.
 
-This aim of this tutorial is to apply K-means algorithm on numerical data , K-prototype algorithm on mixed data (numerical + categorical data) and analyze the properties of resulting clusters to gain insights
+This aim of this tutorial is to apply K-means algorithm on numerical data , K-Prototypes algorithm on mixed data (numerical + categorical data) and analyze the properties of resulting clusters to gain insights
 
 - **Part 1** :  K-means clustering for numerical data.
-- **Part 2** :  K-prototype clustering on mixed data.
+- **Part 2** :  K-Prototypes clustering on mixed data.
 
 
 
@@ -852,12 +854,12 @@ plt.show()
 - Cluster-1 have the most number of customers , these are middle class people with medium spending & income.
     
     
-*All age-groups & gender are kind of evenly distributed among these clusters ,so these clusters are not super useful if we want to target specific gender or age-group for our marketing campaigns , so lets try to bring in these demographics data and use it to build out clusters but since these demographics data (Age group / Gender) are categorical values K-means would not work because it uses euclidean distance as metric to calculate distance so we will be using K-Prototype which takes care of mixed data types , it applies euclidean distance for numerical data and hamming distance for categorical data.*
+*All age-groups & gender are kind of evenly distributed among these clusters ,so these clusters are not super useful if we want to target specific gender or age-group for our marketing campaigns , so lets try to bring in these demographics data and use it to build out clusters but since these demographics data (Age group / Gender) are categorical values K-means would not work because it uses euclidean distance as metric to calculate distance so we will be using K-Prototypes which takes care of mixed data types , it applies euclidean distance for numerical data and hamming distance for categorical data.*
  
  
 
 
-## K-Prototype
+## K-Prototypes
 
 k-modes is used for clustering categorical variables. It defines clusters based on the number of matching categories between data points. (This is in contrast to the more well-known k-means algorithm, which clusters numerical data based on Euclidean distance.) The k-prototypes algorithm combines k-modes and k-means and is able to cluster mixed numerical / categorical data.
 
@@ -1001,15 +1003,15 @@ d2.head()
 
 
 
-#### K-Prototype Algorithm  (Number of  Clusters = 5)
+#### K-Prototypes Algorithm  (Number of  Clusters = 5)
 
-Starting with K-Prototype algorithm with 5 clusters 
+Starting with K-Prototypes algorithm with 5 clusters 
 
 - Parameters 
    - n_clusters : Number of clusters
    - random_state : for reproducibility
     
-**Points to consider for K-Prototype**
+**Points to consider for K-Prototypes**
 
 - In fit_predict method , "categorical" parameter takes in the value of  index of the categorical features.
 
