@@ -7,7 +7,7 @@ tags:
   - AWS
   - Cloud
 header:
-  teaser: "/images/2020-01-07-cloud_jupyter_files/header.jpg"
+  teaser: "/images/2020-01-07-cloud_jupyter_files/header.png"
 ---
 
 ### Introduction
