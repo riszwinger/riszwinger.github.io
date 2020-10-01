@@ -10,6 +10,9 @@ header:
   teaser: "/images/2020-01-07-cloud_jupyter_files/header.png"
 ---
 
+<img src="/images/2020-01-07-cloud_jupyter_files/header.png">
+
+
 ### Introduction
 
 There are times when we are restricted by the computing power of the local machine to train the machine learning model. So as an alternative we can train our model in the cloud where we can get unlimited computing power.
