@@ -9,6 +9,8 @@ tags:
   - Deep Learning
   - Python
   - CenterNet
+header:
+  teaser: "/images/2020-07-28-CenterNet_files/object_detect.JPG"
 ---
 
 <img src="/images/2020-07-28-CenterNet_files/object_detect.JPG">
