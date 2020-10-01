@@ -4,7 +4,7 @@ permalink: /about/
 title: "About"
 author_profile: true
 header:
-    image: "/images/milkyway.jpg"
+    image: "https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif"
 ---
 
 I'm a Senior Data Scientist at [Jetstar Airways](https://www.jetstar.com/au/en/about-us?pid=mainfooter:about-us), an Australian low-cost airline, a wholly-owned subsidiary of Qantas. I help businesses to make data-driven decisions by transforming data into meaningful stories and actionable insights. 
