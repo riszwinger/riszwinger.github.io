@@ -6,6 +6,8 @@ excerpt: This post explores how to set up an environment for training machine l
 tags:
   - AWS
   - Cloud
+header:
+  teaser: "/images/2020-01-07-cloud_jupyter_files/header.jpg"
 ---
 
 ### Introduction
