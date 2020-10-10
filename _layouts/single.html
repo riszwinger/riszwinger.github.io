@@ -30,8 +30,6 @@ classes: wide
           {% if page.title %}<h1 id="page-title" class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
         
         {% if page.date %}
-          <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-          <div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="gupta-rishabh"><a class="LI-simple-link" href='https://au.linkedin.com/in/gupta-rishabh?trk=profile-badge'>Rishabh Gupta</a></div>
           <strong><i class="far fa-calendar-alt" aria-hidden="true"></i> Published:</strong> {{ page.date | date: "%B %d, %Y" }}
             {% endif %}
           {% include page__meta.html %}
